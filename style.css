@@ -1,5 +1,6 @@
 body{
     background: #bab7b7;
+    font-family: monospace;
 }
 
 .foto{
@@ -8,6 +9,15 @@ body{
 }
 #title, .subtitle, .post_title {
     color: rgb(169, 54, 92);
+}
+
+#title{
+    font-size: 40px; 
+    text-transform: uppercase;
+}
+a{
+    text-decoration: underline;
+    color: rgb(45, 44, 44);
 }
 
 .post_title{
@@ -27,6 +37,7 @@ body{
     color: rgb(45, 44, 44);
     margin: 0;
     margin-bottom: 15px;
+    text-transform: capitalize;
 }
 .post_image{
     margin-bottom: 15px;
