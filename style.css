@@ -4,10 +4,14 @@ body{
     max-width: 1000px;
     margin: auto;
 }
+.Logo{
+    border-radius: .3rem;
+    width: 100px 75px;
+}
 
 .foto{
-    border: 3px solid #353434 ;
-    border-radius: 50% ;
+    border: 1px solid #353434 ;
+    border-radius: 25% ;
 }
 #title, .subtitle, .post_title {
     color: rgb(169, 54, 92);
