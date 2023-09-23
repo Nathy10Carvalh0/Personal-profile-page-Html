@@ -1,25 +1,39 @@
 body{
-    background: #bab7b7;
-    font-family: monospace;
-    max-width: 1000px;
+    background: #e7dce4;
+    font-family: 'Playfair Display', serif;
     margin: auto;
 }
+.cabecalho{
+    background-color:#3F37C9;
+}
+.texto_cabeçalho{
+    color:#F72585;
+    text-transform: capitalize;
+    font-size: 43px;
+    margin: .5rem 0 0 0;
+    padding: .4rem 5rem .3rem 0;
+    display: inline;
+    float:right;
+}
+
 .Logo{
+    padding: 0 1rem;
     border-radius: .3rem;
     width: 100px 75px;
 }
 
 .foto{
-    border: 1px solid #353434 ;
     border-radius: 25% ;
+    
 }
 #title, .subtitle, .post_title {
-    color: rgb(169, 54, 92);
+    color:#F72585;
+    ;
 }
 
 #title{
-    font-size: 40px; 
-    text-transform: uppercase;
+    font-size: 60px; 
+    font-style:initial;
 }
 a{
     text-decoration: underline;
@@ -33,11 +47,14 @@ a{
     margin-bottom: 15px;
 }
 .post{
-    background: rgb(236, 212, 227);
+    background:  #150ae5;   
     padding: 15px;
-    border: 3px solid #cda0b5;
     margin-bottom: 15px;
     border-radius: 5px 10px;
+    display: flex; 
+    flex-direction: column;
+    border-radius: 1rem;
+    max-width: 34%
 }
 .post_content{
     color: rgb(45, 44, 44);
