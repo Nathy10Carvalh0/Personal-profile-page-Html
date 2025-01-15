@@ -21,5 +21,6 @@ https://www.raniery.dev/
 - Repositórios Git
 - Empresas trabalhadas 
 #### Add aba qualificações
-inspo:![alt text](image.png)
+inspo:
+![alt text](image.png)
 #### Add aba Portifolio com os projetos já feitos.
