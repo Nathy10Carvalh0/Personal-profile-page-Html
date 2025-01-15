@@ -19,8 +19,9 @@
     --third-color:#D50179;
     --forth-color:#02062f;
   }
-    .portuguese{
-    }
+   /* .portuguese{
+      --header-intro-text:Home;
+    }*/
 
     body {
       font-family: "Quicksand", serif;
