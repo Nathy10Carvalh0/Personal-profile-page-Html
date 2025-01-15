@@ -14,6 +14,7 @@ https://www.raniery.dev/
 ### Atualizações:
 #### Botão dark mode ✅
 #### Botão switch language
+https://www.youtube.com/watch?v=hBYVxQLtrqQ
 #### Responsividade
 #### add baixar curriculo
 #### add informações no sobre:
