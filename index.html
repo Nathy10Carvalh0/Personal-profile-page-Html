@@ -8,12 +8,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Roboto:wght@100;300;500;700&family=Urbanist:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap" rel="stylesheet">
-  
 </head>
 <body>
   <!-- Cabeçalho -->
   <header>
-    <h1>NAT.<span>CARVALHO</span></h1>
+    <div id="logo"><h1>NAT.<span>CARVALHO</span></h1>
+      <img id="flag" src="img/pt.png"></div>
     <nav>
       <ul>
       <a href="#intro">Home</a>
@@ -41,8 +41,8 @@
         <h3><button>Nathalia Carvalho</button>, Frontend Developer & UX Designer</h3>
         <p>Graduated in Systems Analysis since 2022, with postgraduate degrees in web applications and software engineering. Currently, I work as a Front-end developer, focusing on developing modern, high-quality interfaces. My expertise includes performance, user experience, and responsiveness.</p>
         <div class="social-links">
-          <a href="https://www.linkedin.com/in/nathalia-carvalho-de-araujo-3822541b9/" target="_blank"><img src="/img/linkedin.png" alt="LinkedIn"></a>
-          <a href="https://github.com/Nathy10Carvalh0" target="_blank"><img src="/img/github.png" alt="GitHub"></a>
+          <a href="https://www.linkedin.com/in/nathalia-carvalho-de-araujo-3822541b9/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
+          <a href="https://github.com/Nathy10Carvalh0" target="_blank"><img src="img/github.png" alt="GitHub"></a>
         </div>
       </div>
       
@@ -50,8 +50,8 @@
   </section>
 
   <!-- Tecnologias -->
- <section class="skills-section">
-  <h2>Habilidades Técnicas</h2>
+ <section id="technology" class="skills-section">
+  <h2>Technology</h2>
   <p> Ao longo da minha vida academica e carreira, utilizei diversas ferramentas para desenvolver soluções, sendo as principais delas:</p>
   <div clas="skills-container">
     <div class="skills-column">
@@ -111,7 +111,15 @@
         icon.src="img/dark-theme-icon/moon.png";
       }
     }
-
+    var icon = document.getElementById("flag");
+    flag.onclick = function(){
+      document.body.classList.toggle("portuguese");
+      if(document.body.classList.contains("portuguese")){
+        icon.src="img/pt.png/";
+      }else{
+        icon.src="img/en.png";
+      }
+    }
   </script>
 </body>
 </html>
