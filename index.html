@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nat Carvalho - Frontend Developer</title>
   <link rel="stylesheet" href="css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Roboto:wght@100;300;500;700&family=Urbanist:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap" rel="stylesheet">
   
 </head>
 <body>
@@ -12,10 +15,13 @@
   <header>
     <h1>NAT.<span>CARVALHO</span></h1>
     <nav>
+      <ul>
       <a href="#intro">Home</a>
       <a href="#about">About</a>
       <a href="#technology">Technology</a>
       <a href="#contact">Contact</a>
+      <img src="img/dark-theme-icon/moon.png" id="icon">
+      </ul>
     </nav>
   </header>
 
@@ -23,47 +29,65 @@
   <section id="intro" class="section">
     <h2>Hello World! <br>I am <span>Nathalia</span>, <br> Frontend Developer</h2>
     <p>Currently located in Brazil, my love for art and technology make the professional that I am today.</p>
-    <button>Let's get in touch!</button>
+    <a class="button-link" href="https://wa.me/5511959137047?text=Olá%20Nathalia!%20Gostaria%20de%20solicitar%20um%20orçamento.">Let's get in touch!</a>
   </section>
 
   <!-- Sobre -->
   <section id="about" class="section">
     <h2>ABOUT</h2>
     <div class="content">
-      <img src="https://via.placeholder.com/150" alt="Nathalia Carvalho">
-      <p><strong>Nathalia Carvalho</strong>, Frontend Developer & UX Designer</p>
-      <p>Graduated in Systems Analysis since 2022, with postgraduate degrees in web applications and software engineering. Currently, I work as a Front-end developer, focusing on developing modern, high-quality interfaces. My expertise includes performance, user experience, and responsiveness.</p>
-      <div class="social-links">
-        <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-        <a href="#"><img src="github-icon.png" alt="GitHub"></a>
+      <div class="photo"><img src="img/nathalia_blond.jpg" alt="Nathalia Carvalho"></div>
+      <div class="text">
+        <h3><button>Nathalia Carvalho</button>, Frontend Developer & UX Designer</h3>
+        <p>Graduated in Systems Analysis since 2022, with postgraduate degrees in web applications and software engineering. Currently, I work as a Front-end developer, focusing on developing modern, high-quality interfaces. My expertise includes performance, user experience, and responsiveness.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/nathalia-carvalho-de-araujo-3822541b9/" target="_blank"><img src="/img/linkedin.png" alt="LinkedIn"></a>
+          <a href="https://github.com/Nathy10Carvalh0" target="_blank"><img src="/img/github.png" alt="GitHub"></a>
+        </div>
       </div>
+      
     </div>
   </section>
 
   <!-- Tecnologias -->
-  <section id="technology" class="section">
-    <h2>TECHNOLOGY</h2>
-    <p>Which technologies I work with:</p>
-    <div class="tech-grid">
-      <span>JavaScript</span>
-      <span>HTML5</span>
-      <span>CSS3</span>
-      <span>Python</span>
-      <span>C++</span>
-      <span>C#</span>
-      <span>Java</span>
-      <span>TypeScript</span>
-      <span>Angular</span>
-      <span>MySQL</span>
+ <section class="skills-section">
+  <h2>Habilidades Técnicas</h2>
+  <p> Ao longo da minha vida academica e carreira, utilizei diversas ferramentas para desenvolver soluções, sendo as principais delas:</p>
+  <div clas="skills-container">
+    <div class="skills-column">
+      <h3>Frontend</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS3</li>
+          <li>Angular</li>
+          <li>Typescript</li>
+          <li>Javascript</li>
+        </ul>
     </div>
-    <p>Additional Tools:</p>
-    <div class="tech-grid">
-      <span>Office Suite</span>
-      <span>GitHub</span>
-      <span>Figma</span>
-      <span>Power BI</span>
+    <div class="skills-column">
+      <h3>Backend</h3>
+        <ul>
+          <li>Java</li>
+          <li>Python</li>
+          <li>C#</li>
+          <li>C++</li>
+          <li>MySQL</li>
+        </ul>
     </div>
-  </section>
+    <div class="skills-column">
+      <h3>Ferramentas</h3>
+        <ul>
+          <li>Oficce 365</li>
+          <li>Windows CMD</li>
+          <li>Notion</li>
+          <li>Power BI</li>
+          <li>GitHub</li>
+          <li>Obsidian</li>
+        </ul>
+    </div>
+   
+  </div>
+ </section>
 
   <!-- Contato -->
   <footer id="contact">
@@ -71,10 +95,23 @@
     <p>Email: <a href="mailto:nathy10carvalho@gmail.com">nathy10carvalho@gmail.com</a></p>
     <p>Phone: <a href="tel:+55119591371047">+55 11 95913-7047</a></p>
     <div class="social-links">
-      <a href="https://www.instagram.com/nathy10carvalh0/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
-      <a href="https://www.linkedin.com/in/nathalia-carvalho-de-araujo-3822541b9/"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-      <a href="https://github.com/nathy10Carvalh0"><img src="github-icon.png" alt="GitHub"></a>
+      <a href="https://www.instagram.com/nathy10carvalh0/" target="_blank"><img src="img/instagram.jpeg" alt="Instagram"></a>
+      <a href="https://www.linkedin.com/in/nathalia-carvalho-de-araujo-3822541b9/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
+      <a href="https://github.com/nathy10Carvalh0" target="_blank"><img src="img/github.png" alt="GitHub"></a>
+      <a href="https://wa.me/5511959137047?text=Olá%20Nathalia!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank"><img src="img/whatsapp.jpg" alt="WhatsApp"></a>
     </div>
   </footer>
+  <script>
+    var icon = document.getElementById("icon");
+    icon.onclick = function(){
+      document.body.classList.toggle("dark-theme");
+      if(document.body.classList.contains("dark-theme")){
+        icon.src="img/dark-theme-icon/sun.png";
+      }else{
+        icon.src="img/dark-theme-icon/moon.png";
+      }
+    }
+
+  </script>
 </body>
 </html>
