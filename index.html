@@ -7,56 +7,60 @@
   <title>Nat Carvalho - Frontend Developer</title>
   <link rel="stylesheet" href="css/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Roboto:wght@100;300;500;700&family=Urbanist:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Roboto:wght@100;300;500;700&family=Urbanist:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Cabeçalho -->
   <header>
     <div id="logo"><h1>NAT.<span>CARVALHO</span></h1>
-      <img src="img/pt.png" id="flag"></div>
+      <img src="img/flags/pt.png" id="flag">
+    </div>
     <nav>
       <ul>
-      <a href="#intro">Home</a>
-      <a href="#about">About</a>
-      <a href="#technology">Technology</a>
-      <a href="#contact">Contact</a>
-      <img src="img/dark-theme-icon/moon.png" id="icon">
+        <a id="headerIntroText" href="#intro">Home</a>
+        <a id="headerAboutText" href="#about">About</a>
+        <a id="headerTechnologyText" href="#technology">Technology</a>
+        <a id="headerContactText" href="#contact">Contact</a>
+        <select name="" id="">
+          <option value="Português"> <img src="img/flags/pt.png" alt="Brazil"> Português</option>
+          <option value="English"> <img src="img/flags/en.png" alt="EUA"> English</option>
+        </select>
+        <img src="img/dark-theme-icon/moon.png" id="icon">
       </ul>
     </nav>
   </header>
 
   <!-- Introdução -->
   <section id="intro" class="section">
-    <h2>Hello World! <br>I am <span>Nathalia</span>, <br> Frontend Developer</h2>
-    <p>Currently located in Brazil, my love for art and technology make the professional that I am today.</p>
-    <a class="button-link" href="https://wa.me/5511959137047?text=Olá%20Nathalia!%20Gostaria%20de%20solicitar%20um%20orçamento.">Let's get in touch!</a>
+    <h2 id="sectionIntroH2">Hello World! <br>I am <span>Nathalia</span>, <br> Frontend Developer</h2>
+    <p id="sectionIntroP">Currently located in Brazil, my love for art and technology make the professional that I am today.</p>
+    <a id="sectionIntroA" class="button-link" href="https://wa.me/5511959137047?text=Olá%20Nathalia!%20Gostaria%20de%20solicitar%20um%20orçamento.">Let's get in touch!</a>
   </section>
 
   <!-- Sobre -->
   <section id="about" class="section">
-    <h2>ABOUT</h2>
+    <h2 id="sectionAboutH2">ABOUT</h2>
     <div class="content">
       <div class="photo"><img src="img/nathalia_blond.jpg" alt="Nathalia Carvalho"></div>
       <div class="text">
-        <h3><button>Nathalia Carvalho</button>, Frontend Developer & UX Designer</h3>
-        <p>Graduated in Systems Analysis since 2022, with postgraduate degrees in web applications and software engineering. Currently, I work as a Front-end developer, focusing on developing modern, high-quality interfaces. My expertise includes performance, user experience, and responsiveness.</p>
+        <h3 id="sectionAboutH3"><button>Nathalia Carvalho</button>, Frontend Developer & UX Designer</h3>
+        <p id="sectionAboutP">Graduated in Systems Analysis since 2022, with postgraduate degrees in web applications and software engineering. Currently, I work as a Front-end developer, focusing on developing modern, high-quality interfaces. My expertise includes performance, user experience, and responsiveness.</p>
         <div class="social-links">
           <a href="https://www.linkedin.com/in/nathalia-carvalho-de-araujo-3822541b9/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
           <a href="https://github.com/Nathy10Carvalh0" target="_blank"><img src="img/github.png" alt="GitHub"></a>
         </div>
       </div>
-      
     </div>
   </section>
 
   <!-- Tecnologias -->
- <section id="technology" class="skills-section">
-  <h2>Technology</h2>
-  <p> Ao longo da minha vida academica e carreira, utilizei diversas ferramentas para desenvolver soluções, sendo as principais delas:</p>
-  <div clas="skills-container">
-    <div class="skills-column">
-      <h3>Frontend</h3>
+  <section id="technology" class="skills-section">
+    <h2 id="sectionTechnologyH2">Technology</h2>
+    <p id="sectionTechnologyP">Ao longo da minha vida acadêmica e carreira, utilizei diversas ferramentas para desenvolver soluções, sendo as principais delas:</p>
+    <div class="skills-container">
+      <div class="skills-column">
+        <h3 id="divSkillsColumnH3Frontend">Frontend</h3>
         <ul>
           <li>HTML</li>
           <li>CSS3</li>
@@ -64,9 +68,9 @@
           <li>Typescript</li>
           <li>Javascript</li>
         </ul>
-    </div>
-    <div class="skills-column">
-      <h3>Backend</h3>
+      </div>
+      <div class="skills-column">
+        <h3 id="divSkillsColumnH3Backend">Backend</h3>
         <ul>
           <li>Java</li>
           <li>Python</li>
@@ -74,9 +78,9 @@
           <li>C++</li>
           <li>MySQL</li>
         </ul>
-    </div>
-    <div class="skills-column">
-      <h3>Ferramentas</h3>
+      </div>
+      <div class="skills-column">
+        <h3 id="divSkillsColumnH3Tools">Ferramentas</h3>
         <ul>
           <li>Oficce 365</li>
           <li>Windows CMD</li>
@@ -85,14 +89,13 @@
           <li>GitHub</li>
           <li>Obsidian</li>
         </ul>
+      </div>
     </div>
-   
-  </div>
- </section>
+  </section>
 
   <!-- Contato -->
   <footer id="contact">
-    <h2>CONTACT</h2>
+    <h2 id="contactH2">CONTACT</h2>
     <p>Email: <a href="mailto:nathy10carvalho@gmail.com">nathy10carvalho@gmail.com</a></p>
     <p>Phone: <a href="tel:+55119591371047">+55 11 95913-7047</a></p>
     <div class="social-links">
@@ -112,15 +115,7 @@
         icon.src="img/dark-theme-icon/moon.png";
       }
     }
-   /* var flag = document.getElementById("flag");
-    flag.onclick = function(){
-      document.body.classList.toggle("portuguese");
-      if(document.body.classList.contains("portuguese")){
-        flag.src="img/pt.png/";
-      }else{
-        flag.src="img/en.png";
-      }
-    }*/
   </script>
+  <script src="main.js"></script>
 </body>
 </html>
