@@ -14,6 +14,7 @@ https://www.raniery.dev/
 ### Atualizações:
 #### Botão dark mode ✅
 #### Botão switch language
+https://www.youtube.com/watch?v=hBYVxQLtrqQ
 #### Responsividade
 #### add baixar curriculo
 #### add informações no sobre:
@@ -21,5 +22,6 @@ https://www.raniery.dev/
 - Repositórios Git
 - Empresas trabalhadas 
 #### Add aba qualificações
-inspo:![alt text](image.png)
+inspo:
+![alt text](image.png)
 #### Add aba Portifolio com os projetos já feitos.
