@@ -80,6 +80,50 @@
     nav a:hover {
       color: var(--third-color);
     }
+      /* Estilo básico do select */
+    select {
+      background-color: transparent; /* Fundo transparente para combinar com o cabeçalho */
+      color: #333; /* Cor do texto */
+      font-size: 16px; /* Tamanho da fonte */
+      border: none; /* Remove a borda padrão */
+      outline: none; /* Remove a borda ao focar */
+      cursor: pointer; /* Cursor em forma de mão ao passar */
+      padding: 5px 10px; /* Espaçamento interno */
+      border-radius: 5px; /* Arredondar os cantos */
+    }
+
+    /* Adiciona transição ao passar o mouse */
+    select:hover {
+      background-color: #eaeaea; /* Fundo leve ao passar */
+      color: #000; /* Texto mais escuro ao passar */
+    }
+
+    /* Para browsers que permitem estilizar o ícone da seta */
+    select::-ms-expand {
+      display: none; /* Remove a seta padrão no Edge */
+    }
+
+    /* Ajuste da seta para WebKit (Chrome, Safari) 
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      position: relative;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath fill='%23333' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 12px;
+    }
+
+    /* Responsividade 
+    @media (max-width: 768px) {
+      select {
+        font-size: 14px;
+        padding: 4px 8px;
+      }
+    }*/
+
+
 
     .section {
       padding: 3rem 2rem;
