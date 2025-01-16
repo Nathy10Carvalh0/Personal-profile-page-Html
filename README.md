@@ -15,6 +15,7 @@ https://www.raniery.dev/
 #### Botão dark mode ✅
 #### Botão switch language
 https://www.youtube.com/watch?v=hBYVxQLtrqQ
+#### Fixar menu no topo
 #### Responsividade
 #### add baixar curriculo
 #### add informações no sobre:
