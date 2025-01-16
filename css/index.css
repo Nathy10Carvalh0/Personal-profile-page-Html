@@ -82,20 +82,23 @@
     }
       /* Estilo básico do select */
     select {
+      font-family: "Quicksand", serif;
       background-color: transparent; /* Fundo transparente para combinar com o cabeçalho */
-      color: #333; /* Cor do texto */
-      font-size: 16px; /* Tamanho da fonte */
+      color: var(--second-color); /* Cor do texto */
+      font-size: 1.2rem; /* Tamanho da fonte */
       border: none; /* Remove a borda padrão */
       outline: none; /* Remove a borda ao focar */
       cursor: pointer; /* Cursor em forma de mão ao passar */
       padding: 5px 10px; /* Espaçamento interno */
       border-radius: 5px; /* Arredondar os cantos */
+      font-weight: bold;
+      line-height: 1.6;
     }
-
+      
     /* Adiciona transição ao passar o mouse */
     select:hover {
-      background-color: #eaeaea; /* Fundo leve ao passar */
-      color: #000; /* Texto mais escuro ao passar */
+      background-color: var(--forth-color); /* Fundo leve ao passar */
+      color: var(--second-color); /* Texto mais escuro ao passar */
     }
 
     /* Para browsers que permitem estilizar o ícone da seta */
