@@ -14,7 +14,6 @@ https://www.raniery.dev/
 ### Atualizações:
 #### Botão dark mode ✅(14/01/2025)
 #### Botão switch language ✅ (16/01/2025)
-https://www.youtube.com/watch?v=hBYVxQLtrqQ
 #### Fixar menu no topo
 #### Responsividade
 #### add baixar curriculo
