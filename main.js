@@ -1,89 +1,94 @@
+// This object holds translations for both languages (Portuguese and English)
 const translations = {
     en: {
-      headerIntroText: "Home",
+      headerIntroText: "Home",  // Translations for header and sections
       headerAboutText: "About",
       headerTechnologyText: "Technology",
       headerContactText: "Contact",
   
-      sectionIntroH2: "Hello World! <br>I am <span>Nathalia</span>, <br> Frontend Developer",
+      sectionIntroH2: "Hello World! <br>I am <span>Nathalia</span>, <br> Frontend Developer", // Translated content for the intro section
       sectionIntroP: "Currently located in Brazil, my love for art and technology make the professional that I am today.",
       sectionIntroA: "Let's get in touch!",
   
-      sectionAboutH2: "ABOUT",
+      sectionAboutH2: "ABOUT", // Section titles and descriptions
       sectionAboutH3: "Nathalia Carvalho, Frontend Developer & UX Designer",
       sectionAboutP: "Graduated in Systems Analysis since 2022, with postgraduate degrees in web applications and software engineering. Currently, I work as a Front-end developer, focusing on developing modern, high-quality interfaces. My expertise includes performance, user experience, and responsiveness.",
   
-      sectionTechnologyH2: "Technology",
+      sectionTechnologyH2: "Technology", // Technologies section
       sectionTechnologyP: "Over the course of my academic life and career, I have used various tools to develop solutions, with the main ones being:",
       divSkillsColumnH3: {
-        frontend: "Frontend",
+        frontend: "Frontend", // Specific skills sections
         backend: "Backend",
         tools: "Tools",
       },
   
-      contactH2: "CONTACT",
+      contactH2: "CONTACT", // Contact section title
     },
     pt: {
-      headerIntroText: "Início",
+      headerIntroText: "Início", // Translations for the same sections in Portuguese
       headerAboutText: "Sobre",
       headerTechnologyText: "Tecnologias",
       headerContactText: "Contato",
   
-      sectionIntroH2: "Olá Mundo! <br>Eu sou <span>Nathalia</span>, <br> Desenvolvedora Frontend",
+      sectionIntroH2: "Olá Mundo! <br>Eu sou <span>Nathalia</span>, <br> Desenvolvedora Frontend", // Portuguese translation for intro section
       sectionIntroP: "Atualmente localizada no Brasil, meu amor por arte e tecnologia formam a profissional que sou hoje.",
       sectionIntroA: "Vamos conversar!",
   
-      sectionAboutH2: "SOBRE",
+      sectionAboutH2: "SOBRE", // Section titles and descriptions in Portuguese
       sectionAboutH3: "Nathalia Carvalho, Desenvolvedora Frontend & UX Designer",
       sectionAboutP: "Graduada em Análise de Sistemas desde 2022, com pós-graduação em aplicações web e engenharia de software. Atualmente, trabalho como desenvolvedora Front-end, focando em criar interfaces modernas e de alta qualidade. Minha experiência inclui desempenho, experiência do usuário e responsividade.",
   
-      sectionTechnologyH2: "TECNOLOGIAS",
+      sectionTechnologyH2: "TECNOLOGIAS", // Technologies section in Portuguese
       sectionTechnologyP: "Ao longo da minha vida acadêmica e carreira, utilizei diversas ferramentas para desenvolver soluções, sendo as principais delas:",
       divSkillsColumnH3: {
-        frontend: "Frontend",
+        frontend: "Frontend", // Specific skills sections in Portuguese
         backend: "Backend",
         tools: "Ferramentas",
       },
   
-      contactH2: "CONTATO",
+      contactH2: "CONTATO", // Contact section title in Portuguese
     },
   };
   
+  // Selecting the language selector dropdown and the flag image element
   const languageSelector = document.querySelector("select");
   const flag = document.getElementById("flag");
   
+  // This function updates the content of the website based on the selected language
   const setLanguage = (language) => {
+    // Check if the selected language is Portuguese or English and use the corresponding translations
     const t = translations[language === "Português" ? "pt" : "en"];
   
-    document.getElementById("headerIntroText").innerText = t.headerIntroText;
-    document.getElementById("headerAboutText").innerText = t.headerAboutText;
-    document.getElementById("headerTechnologyText").innerText = t.headerTechnologyText;
-    document.getElementById("headerContactText").innerText = t.headerContactText;
+    // Update each section of the page with the translated text
+    document.getElementById("headerIntroText").innerText = t.headerIntroText;  // Update the intro text of the header
+    document.getElementById("headerAboutText").innerText = t.headerAboutText;  // Update the "About" section text
+    document.getElementById("headerTechnologyText").innerText = t.headerTechnologyText;  // Update the "Technology" section text
+    document.getElementById("headerContactText").innerText = t.headerContactText;  // Update the "Contact" section text
   
-    document.getElementById("sectionIntroH2").innerHTML = t.sectionIntroH2;
-    document.getElementById("sectionIntroP").innerText = t.sectionIntroP;
-    document.getElementById("sectionIntroA").innerText = t.sectionIntroA;
+    document.getElementById("sectionIntroH2").innerHTML = t.sectionIntroH2;  // Update the introduction subtitle (can contain HTML)
+    document.getElementById("sectionIntroP").innerText = t.sectionIntroP;  // Update the intro paragraph text
+    document.getElementById("sectionIntroA").innerText = t.sectionIntroA;  // Update the "Let's get in touch" text
   
-    document.getElementById("sectionAboutH2").innerText = t.sectionAboutH2;
-    document.getElementById("sectionAboutH3").innerText = t.sectionAboutH3;
-    document.getElementById("sectionAboutP").innerText = t.sectionAboutP;
+    document.getElementById("sectionAboutH2").innerText = t.sectionAboutH2;  // Update the "About" section title
+    document.getElementById("sectionAboutH3").innerText = t.sectionAboutH3;  // Update the "About" section subtitle
+    document.getElementById("sectionAboutP").innerText = t.sectionAboutP;  // Update the "About" section description
   
-    document.getElementById("sectionTechnologyH2").innerText = t.sectionTechnologyH2;
-    document.getElementById("sectionTechnologyP").innerText = t.sectionTechnologyP;
+    document.getElementById("sectionTechnologyH2").innerText = t.sectionTechnologyH2;  // Update the "Technology" section title
+    document.getElementById("sectionTechnologyP").innerText = t.sectionTechnologyP;  // Update the "Technology" section description
   
-    document.getElementById("divSkillsColumnH3Frontend").innerText = t.divSkillsColumnH3.frontend;
-    document.getElementById("divSkillsColumnH3Backend").innerText = t.divSkillsColumnH3.backend;
-    document.getElementById("divSkillsColumnH3Tools").innerText = t.divSkillsColumnH3.tools;
+    document.getElementById("divSkillsColumnH3Frontend").innerText = t.divSkillsColumnH3.frontend;  // Update the "Frontend" skill title
+    document.getElementById("divSkillsColumnH3Backend").innerText = t.divSkillsColumnH3.backend;  // Update the "Backend" skill title
+    document.getElementById("divSkillsColumnH3Tools").innerText = t.divSkillsColumnH3.tools;  // Update the "Tools" skill title
   
-    document.getElementById("contactH2").innerText = t.contactH2;
+    document.getElementById("contactH2").innerText = t.contactH2;  // Update the "Contact" section title
   
-    // Atualiza a bandeira
-    flag.src = language === "Português" ? "img/flags/pt.png" : "img/flags/en.png";
-    flag.alt = language === "Português" ? "Brazil" : "EUA";
+    // Update the flag image source and alternative text based on the selected language
+    flag.src = language === "Português" ? "img/flags/pt.png" : "img/flags/en.png";  // Set the flag image to match the language
+    flag.alt = language === "Português" ? "Brazil" : "USA";  // Set the alt text of the flag based on the selected language
   };
   
-  // Listener para troca de idioma
+  // Event listener for when the language selector is changed
   languageSelector.addEventListener("change", (event) => {
-    setLanguage(event.target.value);
+    setLanguage(event.target.value);  // Call the setLanguage function with the selected value
   });
   
