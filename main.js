@@ -50,6 +50,8 @@ const translations = {
   };
   
   const languageSelector = document.querySelector("select");
+  const flag = document.getElementById("flag");
+  
   const setLanguage = (language) => {
     const t = translations[language === "Português" ? "pt" : "en"];
   
@@ -74,6 +76,10 @@ const translations = {
     document.getElementById("divSkillsColumnH3Tools").innerText = t.divSkillsColumnH3.tools;
   
     document.getElementById("contactH2").innerText = t.contactH2;
+  
+    // Atualiza a bandeira
+    flag.src = language === "Português" ? "img/flags/pt.png" : "img/flags/en.png";
+    flag.alt = language === "Português" ? "Brazil" : "EUA";
   };
   
   // Listener para troca de idioma
