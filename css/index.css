@@ -39,48 +39,56 @@
     }
     header {
       background-color: var(--first-color);
-      padding: 1rem 2rem;
+      padding: 0.2rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
       border-bottom: 2px solid var(--first-color);
+      position: fixed; /* Fixa o cabeçalho no topo */
+      top: 0; /* Alinha no topo da página */
+      left: 0; /* Alinha à esquerda */
+      width: 100%; /* Faz o cabeçalho ocupar toda a largura da tela */
+      z-index: 1000; /* Garante que fique acima de outros elementos */
     }
-
+    
     header h1 {
       font-size: 1.5rem;
       color: var(--second-color);
     }
-
+    
     header h1 span {
       color: var(--third-color);
     }
-    #flag{
+    
+    #flag {
       width: 40px;
       cursor: pointer;
-      
     }
-    #icon{
+    
+    #icon {
       width: 30px;
       cursor: pointer;
-      
     }
-    nav ul{
+    
+    nav ul {
       display: flex;
       align-items: center;
       text-align: right;
-      gap:1rem;
+      gap: 1rem;
     }
+    
     nav a {
       text-decoration: none;
       color: var(--second-color);
       margin-left: 1.5rem;
       font-weight: bold;
     }
-
+    
     nav a:hover {
       color: var(--third-color);
     }
-      /* Estilo básico do select */
+    
+    /* Estilo básico do select */
     select {
       font-family: "Quicksand", serif;
       background-color: transparent; /* Fundo transparente para combinar com o cabeçalho */
@@ -94,18 +102,23 @@
       font-weight: bold;
       line-height: 1.6;
     }
-      
+    
     /* Adiciona transição ao passar o mouse */
     select:hover {
       background-color: var(--forth-color); /* Fundo leve ao passar */
       color: var(--second-color); /* Texto mais escuro ao passar */
     }
-
+    
     /* Para browsers que permitem estilizar o ícone da seta */
     select::-ms-expand {
       display: none; /* Remove a seta padrão no Edge */
     }
-
+    
+    /* Adiciona margem ao body para evitar conteúdo escondido */
+    body {
+      margin-top: 80px; /* Ajuste para o tamanho do cabeçalho */
+    }
+    
     /* Ajuste da seta para WebKit (Chrome, Safari) 
     select {
       -webkit-appearance: none;
