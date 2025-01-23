@@ -1,3 +1,14 @@
+var icon = document.getElementById("icon");
+    icon.onclick = function(){
+      document.body.classList.toggle("dark-theme");
+      if(document.body.classList.contains("dark-theme")){
+        icon.src="img/dark-theme-icon/sun.png";
+      }else{
+        icon.src="img/dark-theme-icon/moon.png";
+      }
+    }
+
+
 // This object holds translations for both languages (Portuguese and English)
 const translations = {
     en: {
@@ -91,4 +102,24 @@ const translations = {
   languageSelector.addEventListener("change", (event) => {
     setLanguage(event.target.value);  // Call the setLanguage function with the selected value
   });
-  
+  function openModal(index) {
+    const modal = document.getElementById("projectModal");
+    const modalImage = document.getElementById("modalImage");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalDescription = document.getElementById("modalDescription");
+    const modalLink = document.getElementById("modalLink");
+
+    const project = projects[index];
+
+    modalImage.src = project.image;
+    modalTitle.textContent = project.title;
+    modalDescription.textContent = project.description;
+    modalLink.href = project.link;
+
+    modal.classList.add("active");
+  }
+
+  function closeModal() {
+    const modal = document.getElementById("projectModal");
+    modal.classList.remove("active");
+  }  

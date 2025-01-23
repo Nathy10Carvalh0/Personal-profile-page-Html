@@ -93,7 +93,31 @@
       </div>
     </div>
   </section>
+  <!--Portifolio-->
+  <section id="portfolio">
+    <h2>My Portfolio</h2>
+    <div class="carousel">
+      <div class="carousel-item" onclick="openModal(0)">
+        <img src="https://via.placeholder.com/300x200" alt="Project 1">
+      </div>
+      <div class="carousel-item" onclick="openModal(1)">
+        <img src="https://via.placeholder.com/300x200" alt="Project 2">
+      </div>
+      <div class="carousel-item" onclick="openModal(2)">
+        <img src="https://via.placeholder.com/300x200" alt="Project 3">
+      </div>
+    </div>
+  </section>
 
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <img src="https://via.placeholder.com/600x400" alt="Project Image" id="modalImage">
+      <h3 id="modalTitle">Project Title</h3>
+      <p id="modalDescription">This is a description of the project.</p>
+      <a href="#" target="_blank" id="modalLink">Visit Project</a>
+    </div>
+  </div>
   <!-- Contato -->
   <footer id="contact">
     <h2 id="contactH2">CONTACT</h2>
@@ -106,18 +130,6 @@
       <a href="https://wa.me/5511959137047?text=Olá%20Nathalia!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank"><img src="img/whatsapp.jpg" alt="WhatsApp"></a>
     </div>
   </footer>
-  <script>
-    var icon = document.getElementById("icon");
-    icon.onclick = function(){
-      document.body.classList.toggle("dark-theme");
-      if(document.body.classList.contains("dark-theme")){
-        icon.src="img/dark-theme-icon/sun.png";
-      }else{
-        icon.src="img/dark-theme-icon/moon.png";
-      }
-    }
-    
-  </script>
   <script src="main.js"></script>
 </body>
 </html>
