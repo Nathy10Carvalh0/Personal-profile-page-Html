@@ -1,3 +1,4 @@
+//this fuction changes the color theme (dark and light) of the site
 var icon = document.getElementById("icon");
     icon.onclick = function(){
       document.body.classList.toggle("dark-theme");
@@ -32,7 +33,7 @@ const translations = {
         backend: "Backend",
         tools: "Tools",
       },
-  
+      sectionPortifolioH2: "My portifolio",
       contactH2: "CONTACT", // Contact section title
     },
     pt: {
@@ -56,7 +57,7 @@ const translations = {
         backend: "Backend",
         tools: "Ferramentas",
       },
-  
+      sectionPortifolioH2: "Meu portifolio",
       contactH2: "CONTATO", // Contact section title in Portuguese
     },
   };
@@ -90,7 +91,7 @@ const translations = {
     document.getElementById("divSkillsColumnH3Frontend").innerText = t.divSkillsColumnH3.frontend;  // Update the "Frontend" skill title
     document.getElementById("divSkillsColumnH3Backend").innerText = t.divSkillsColumnH3.backend;  // Update the "Backend" skill title
     document.getElementById("divSkillsColumnH3Tools").innerText = t.divSkillsColumnH3.tools;  // Update the "Tools" skill title
-  
+    document.getElementById("sectionPortifolioH2").innerText = t.sectionPortifolioH2;
     document.getElementById("contactH2").innerText = t.contactH2;  // Update the "Contact" section title
   
     // Update the flag image source and alternative text based on the selected language
@@ -102,24 +103,46 @@ const translations = {
   languageSelector.addEventListener("change", (event) => {
     setLanguage(event.target.value);  // Call the setLanguage function with the selected value
   });
-  function openModal(index) {
+
+  const projects = [
+    {
+      title: "Project 1", // Título do projeto 1
+      description: "This is the description for project 1.", // Descrição do projeto 1
+      image: "/img/projeto/1.jpg", // URL da imagem do projeto 1
+      link: "https://example.com/project1" // Link para o projeto 1
+    },
+    {
+      title: "Pokedex.api", // Título do projeto 2
+      description: "Ao longo das aulas de Java Script desenvolvemos uma pokedex com um display de todos os Pokémons da 1ª geração. Esse projeto consiste em implementar uma aba de visualização com os detalhes de cada Pokémon através do Java script. SITE INDISPONIVEL TEMPORARIAMENTE PARA ATUALIZAÇÕES", // Descrição do projeto 2
+      image: "/img/projeto/2.png", // URL da imagem do projeto 2
+      link: "https://nathy10carvalh0.github.io/Pokedex/" // Link para o projeto 2
+    },
+    {
+      title: "Dog Sitter", // Título do projeto 3
+      description: "This is the description for project 3.", // Descrição do projeto 3
+      image: "/img/projeto/3.png", // URL da imagem do projeto 3
+      link: "https://nathy10carvalh0.github.io/Dog-Care/" // Link para o projeto 3
+    }
+  ];
+
+  function openModal(index) { // Função para abrir o modal
     const modal = document.getElementById("projectModal");
     const modalImage = document.getElementById("modalImage");
     const modalTitle = document.getElementById("modalTitle");
     const modalDescription = document.getElementById("modalDescription");
     const modalLink = document.getElementById("modalLink");
 
-    const project = projects[index];
+    const project = projects[index]; // Obtém os dados do projeto clicado
 
-    modalImage.src = project.image;
-    modalTitle.textContent = project.title;
-    modalDescription.textContent = project.description;
-    modalLink.href = project.link;
+    modalImage.src = project.image; // Atualiza a imagem no modal
+    modalTitle.textContent = project.title; // Atualiza o título no modal
+    modalDescription.textContent = project.description; // Atualiza a descrição no modal
+    modalLink.href = project.link; // Atualiza o link no modal
 
-    modal.classList.add("active");
+    modal.classList.add("active"); // Exibe o modal
   }
 
-  function closeModal() {
+  function closeModal() { // Função para fechar o modal
     const modal = document.getElementById("projectModal");
-    modal.classList.remove("active");
-  }  
+    modal.classList.remove("active"); // Oculta o modal
+  }

@@ -95,29 +95,31 @@
   </section>
   <!--Portifolio-->
   <section id="portfolio">
-    <h2>My Portfolio</h2>
-    <div class="carousel">
-      <div class="carousel-item" onclick="openModal(0)">
-        <img src="https://via.placeholder.com/300x200" alt="Project 1">
+    <h2 id="sectionPortifolioH2">My Portfolio</h2>
+    <div class="carousel"> <!-- Contêiner do carrossel -->
+      <div class="carousel-item" onclick="openModal(0)"> <!-- Item do carrossel com evento de clique -->
+        <img src="/img/projeto/1.jpg" alt="Project 1"> <!-- Imagem do projeto 1 -->
       </div>
-      <div class="carousel-item" onclick="openModal(1)">
-        <img src="https://via.placeholder.com/300x200" alt="Project 2">
+      <div class="carousel-item" onclick="openModal(1)"> <!-- Item do carrossel com evento de clique -->
+        <img src="/img/projeto/2.png" alt="Project 2"> <!-- Imagem do projeto 2 -->
       </div>
-      <div class="carousel-item" onclick="openModal(2)">
-        <img src="https://via.placeholder.com/300x200" alt="Project 3">
+      <div class="carousel-item" onclick="openModal(2)"> <!-- Item do carrossel com evento de clique -->
+        <img src="/img/projeto/3.png" alt="Project 3"> <!-- Imagem do projeto 3 -->
       </div>
     </div>
   </section>
 
-  <div class="modal" id="projectModal">
-    <div class="modal-content">
-      <button class="modal-close" onclick="closeModal()">&times;</button>
-      <img src="https://via.placeholder.com/600x400" alt="Project Image" id="modalImage">
-      <h3 id="modalTitle">Project Title</h3>
-      <p id="modalDescription">This is a description of the project.</p>
-      <a href="#" target="_blank" id="modalLink">Visit Project</a>
+  <div class="modal" id="projectModal"> <!-- Modal para exibir detalhes do projeto -->
+    <div class="modal-content"> <!-- Conteúdo do modal -->
+      <button class="modal-close" onclick="closeModal()">&times;</button> <!-- Botão de fechar o modal -->
+      <img src="https://via.placeholder.com/600x400" alt="Project Image" id="modalImage"> <!-- Imagem do projeto no modal -->
+      <h3 id="modalTitle">Project Title</h3> <!-- Título do projeto no modal -->
+      <p id="modalDescription">This is a description of the project.</p> <!-- Descrição do projeto no modal -->
+      <a href="#" target="_blank" id="modalLink">Visit Project</a> <!-- Link para o site do projeto -->
     </div>
   </div>
+ 
+
   <!-- Contato -->
   <footer id="contact">
     <h2 id="contactH2">CONTACT</h2>
