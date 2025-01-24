@@ -293,7 +293,7 @@
       }
   
       .carousel {
-        display: inline-flex;
+        display: flex;
         overflow-x: auto;
         gap: 1rem;
         scroll-snap-type: x mandatory;
