@@ -108,21 +108,45 @@ const translations = {
     {
       title: "Project 1", // Título do projeto 1
       description: "This is the description for project 1.", // Descrição do projeto 1
-      image: "/img/project1.jpg", // URL da imagem do projeto 1
+      image: "img/project1.jpg", // URL da imagem do projeto 1
       link: "https://example.com/project1" // Link para o projeto 1
     },
     {
       title: "Pokedex.api", // Título do projeto 2
       description: "Ao longo das aulas de Java Script desenvolvemos uma pokedex com um display de todos os Pokémons da 1ª geração. Esse projeto consiste em implementar uma aba de visualização com os detalhes de cada Pokémon através do Java script. SITE INDISPONIVEL TEMPORARIAMENTE PARA ATUALIZAÇÕES", // Descrição do projeto 2
-      image: "/img/project2.png", // URL da imagem do projeto 2
+      image: "img/project2.png", // URL da imagem do projeto 2
       link: "https://nathy10carvalh0.github.io/Pokedex/" // Link para o projeto 2
     },
     {
       title: "Dog Sitter", // Título do projeto 3
       description: "This is the description for project 3.", // Descrição do projeto 3
-      image: "/img/project3.png", // URL da imagem do projeto 3
+      image: "img/project3.png", // URL da imagem do projeto 3
       link: "https://nathy10carvalh0.github.io/Dog-Care/" // Link para o projeto 3
-    }
+    },
+    {
+      title: "Project 1", // Título do projeto 1
+      description: "This is the description for project 1.", // Descrição do projeto 1
+      image: "img/project1.jpg", // URL da imagem do projeto 1
+      link: "https://example.com/project1" // Link para o projeto 1
+    },
+    {
+      title: "Project 1", // Título do projeto 1
+      description: "This is the description for project 1.", // Descrição do projeto 1
+      image: "img/project1.jpg", // URL da imagem do projeto 1
+      link: "https://example.com/project1" // Link para o projeto 1
+    },
+    {
+      title: "Project 1", // Título do projeto 1
+      description: "This is the description for project 1.", // Descrição do projeto 1
+      image: "img/project1.jpg", // URL da imagem do projeto 1
+      link: "https://example.com/project1" // Link para o projeto 1
+    },
+    {
+      title: "Project 1", // Título do projeto 1
+      description: "This is the description for project 1.", // Descrição do projeto 1
+      image: "img/project1.jpg", // URL da imagem do projeto 1
+      link: "https://example.com/project1" // Link para o projeto 1
+    },
   ];
 
   function openModal(index) { // Função para abrir o modal
