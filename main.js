@@ -104,7 +104,14 @@ const translations = {
     setLanguage(event.target.value);  // Call the setLanguage function with the selected value
   });
 
+  function downloadResume() {
+    const link = document.createElement('a');
+    link.href = 'CV_Nathalia_Carvalho_de_Araujo.pdf'; // Substitua pelo caminho correto do arquivo
+    link.download = 'Curriculo-Nathalia-Carvalho.pdf';
+    link.click();
+  }
   
+
   function showTab(tabId) {
     const tabs = document.querySelectorAll('.tab-content');
     const buttons = document.querySelectorAll('.tab-button');

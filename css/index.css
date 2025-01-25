@@ -241,10 +241,10 @@
 
       /* Botão de download */
       .btn-download {
-        background-color: #e94560;
-        color: #ffffff;
+        background-color: var(--third-color);
+        color: var(--first-color);
         padding: 0.8rem 2rem;
-        font-size: 1rem;
+        font-size: inherit;
         font-weight:inherit;
         border: none;
         border-radius: 5px;
