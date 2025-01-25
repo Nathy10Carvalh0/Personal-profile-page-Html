@@ -18,7 +18,7 @@
     </div>
     <nav>
       <ul>
-        <a id="headerIntroText" href="#intro">Home</a>
+        
         <a id="headerAboutText" href="#about">About</a>
         <a id="headerTechnologyText" href="#technology">Technology</a>
         <a id="headerContactText" href="#contact">Contact</a>
@@ -45,15 +45,88 @@
     <div class="content">
       <div class="photo"><img src="img/nathalia_blond.jpg" alt="Nathalia Carvalho"></div>
       <div class="text">
-        <h3 id="sectionAboutH3"><button>Nathalia Carvalho</button>, Frontend Developer & UX Designer</h3>
+        <h3 id="sectionAboutH3">Nathalia Carvalho, Frontend Developer & UX Designer</h3>
         <p id="sectionAboutP">Graduated in Systems Analysis since 2022, with postgraduate degrees in web applications and software engineering. Currently, I work as a Front-end developer, focusing on developing modern, high-quality interfaces. My expertise includes performance, user experience, and responsiveness.</p>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/nathalia-carvalho-de-araujo-3822541b9/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
-          <a href="https://github.com/Nathy10Carvalh0" target="_blank"><img src="img/github.png" alt="GitHub"></a>
+      
+        <!-- Estatísticas e botão -->
+      <div class="about-stats">
+        <div>
+          <h3>4 years</h3>
+          <p>of experience in field</p>
+        </div>
+        <div>
+          <h3>21</h3>
+          <p>repositories in Github</p>
+        </div>
+        <div>
+          <h3>03</h3>
+          <p>companies worked</p>
         </div>
       </div>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/nathalia-carvalho-de-araujo-3822541b9/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://github.com/Nathy10Carvalh0" target="_blank"><img src="img/github.png" alt="GitHub"></a>
+      </div>
+      <!-- Botão para baixar o currículo -->
+      <button class="btn-download" onclick="downloadResume()">
+        Download resume
+      </button>
     </div>
-  </section>
+  </div>
+    
+</section>
+     
+
+<!--Qualificações-->
+<section id="qualifications">
+  <h2>Qualificações</h2>
+  <p>Minha jornada pessoal</p>
+  <div class="tabs">
+    <button class="tab-button active" onclick="showTab('trabalho')">
+      <i class="icon-briefcase"></i> Trabalho
+    </button>
+    <button class="tab-button" onclick="showTab('educacao')">
+      <i class="icon-graduation"></i> Educação
+    </button>
+  </div>
+
+  <!-- Linha do tempo de Trabalho -->
+  <div id="trabalho" class="tab-content active">
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Estagiário de Desenvolvimento</h3>
+        <p>Empresa 1</p>
+        <span class="date">ago 2023 - atual</span>
+      </div>
+      <div class="timeline-item">
+        <h3>Analista de Desenvolvimento de Sistemas</h3>
+        <p>ACT Digital</p>
+        <span class="date">jun 2022 - jan 2023</span>
+      </div>
+      <div class="timeline-item">
+        <h3>Técnico de Instrumentação</h3>
+        <p>MSX International</p>
+        <span class="date">ago 2021 - nov 2021</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Linha do tempo de Educação -->
+  <div id="educacao" class="tab-content">
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Bacharelado em Tecnologia da Informação</h3>
+        <p>Universidade XYZ</p>
+        <span class="date">2020 - 2024</span>
+      </div>
+      <div class="timeline-item">
+        <h3>Curso Técnico em Informática</h3>
+        <p>Escola Técnica ABC</p>
+        <span class="date">2018 - 2020</span>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Tecnologias -->
   <section id="technology" class="skills-section">
@@ -83,7 +156,7 @@
       <div class="skills-column">
         <h3 id="divSkillsColumnH3Tools">Ferramentas</h3>
         <ul>
-          <li>Oficce 365</li>
+          <li>Officce 365</li>
           <li>Windows CMD</li>
           <li>Notion</li>
           <li>Power BI</li>

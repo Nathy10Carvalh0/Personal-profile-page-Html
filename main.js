@@ -72,7 +72,7 @@ const translations = {
     const t = translations[language === "Português" ? "pt" : "en"];
   
     // Update each section of the page with the translated text
-    document.getElementById("headerIntroText").innerText = t.headerIntroText;  // Update the intro text of the header
+    
     document.getElementById("headerAboutText").innerText = t.headerAboutText;  // Update the "About" section text
     document.getElementById("headerTechnologyText").innerText = t.headerTechnologyText;  // Update the "Technology" section text
     document.getElementById("headerContactText").innerText = t.headerContactText;  // Update the "Contact" section text
@@ -103,6 +103,19 @@ const translations = {
   languageSelector.addEventListener("change", (event) => {
     setLanguage(event.target.value);  // Call the setLanguage function with the selected value
   });
+
+  
+  function showTab(tabId) {
+    const tabs = document.querySelectorAll('.tab-content');
+    const buttons = document.querySelectorAll('.tab-button');
+  
+    tabs.forEach(tab => tab.classList.remove('active'));
+    buttons.forEach(button => button.classList.remove('active'));
+  
+    document.getElementById(tabId).classList.add('active');
+    document.querySelector(`.tab-button[onclick="showTab('${tabId}')"]`).classList.add('active');
+  }
+  
 
   const projects = [
     {
