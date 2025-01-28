@@ -5,10 +5,10 @@
       box-sizing: border-box;
     }
     :root{
-    --first-color:#d7dbe4;
+    --first-color:  #d1d3e1;
     --second-color:#474C69;
     --third-color:#D50179;;
-    --forth-color:#dae0e8;
+    --forth-color:#dddfed;
     }
     .dark-theme{
      --first-color:#01041d;
