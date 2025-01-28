@@ -18,14 +18,12 @@
     </div>
     <nav>
       <ul>
-        
         <a id="headerAboutText" href="#about">About</a>
         <a id="headerTechnologyText" href="#technology">Technology</a>
         <a id="headerContactText" href="#contact">Contact</a>
         <select name="" id="">
           <option value="English"> <img src="img/flags/en.png" alt="EUA"> English</option>
           <option value="Português"> <img src="img/flags/pt.png" alt="Brazil"> Português</option>
-          
         </select>
         <img src="img/dark-theme-icon/moon.png" id="icon">
       </ul>
@@ -51,16 +49,16 @@
         <!-- Estatísticas e botão -->
       <div class="about-stats">
         <div>
-          <h3>4 years</h3>
-          <p>of experience in field</p>
+          <h3 id="AboutStatsH3_1">4 years</h3>
+          <p id="AboutStatsP_1">of experience in field</p>
         </div>
         <div>
-          <h3>21</h3>
-          <p>repositories in Github</p>
+          <h3 id="AboutStatsH3_2">21</h3>
+          <p id="AboutStatsP_2">repositories in Github</p>
         </div>
         <div>
-          <h3>03</h3>
-          <p>companies worked</p>
+          <h3 id="AboutStatsH3_3">4</h3>
+          <p id="AboutStatsP_3">companies worked</p>
         </div>
       </div>
       <div class="social-links">
@@ -68,7 +66,7 @@
         <a href="https://github.com/Nathy10Carvalh0" target="_blank"><img src="img/github.png" alt="GitHub"></a>
       </div>
       <!-- Botão para baixar o currículo -->
-      <button class="btn-download" onclick="downloadResume()">
+      <button class="btn-download" onclick="downloadResume()" id="ButtonDownloadResume">
         Download resume
       </button>
     </div>
@@ -79,14 +77,14 @@
 
 <!--Qualificações-->
 <section id="qualifications">
-  <h2>Qualificações</h2>
-  <p>Minha jornada pessoal</p>
+  <h2 id="SectionQualificationsH2">Qualifications</h2>
+  <p id="SectionQualificationsP">My personal journey</p>
   <div class="tabs">
-    <button class="tab-button active" onclick="showTab('trabalho')">
-      <i class="icon-briefcase"></i> Trabalho
+    <button class="tab-button active" onclick="showTab('trabalho')" id="ButtonWork">
+      <i class="icon-briefcase" ></i> Work
     </button>
-    <button class="tab-button" onclick="showTab('educacao')">
-      <i class="icon-graduation"></i> Educação
+    <button class="tab-button" onclick="showTab('educacao')" id="ButtonEducation">
+      <i class="icon-graduation" ></i> Education
     </button>
   </div>
 
@@ -94,19 +92,22 @@
   <div id="trabalho" class="tab-content active">
     <div class="timeline">
       <div class="timeline-item">
-        <h3>Estagiário de Desenvolvimento</h3>
-        <p>Empresa 1</p>
-        <span class="date">ago 2023 - atual</span>
+        <h3 id="WorkTabH3_1" >JR Systems Analyst</h3>
+        <p id="WorkTabP_1">Bradesco Bank</p>
+        <span class="date">2023 - 2024</span>
+        <h3 id="WorkTabH3_2">Intern</h3>
+        <p id="WorkTabP_2">Bradesco Bank</p>
+        <span class="date">2022 - 2023</span>
       </div>
       <div class="timeline-item">
-        <h3>Analista de Desenvolvimento de Sistemas</h3>
-        <p>ACT Digital</p>
-        <span class="date">jun 2022 - jan 2023</span>
+        <h3 id="WorkTabH3_3">Data Processing Analyst</h3>
+        <p id="WorkTabP_3">Erodata</p>
+        <span class="date">2020 - 2022</span>
       </div>
       <div class="timeline-item">
-        <h3>Técnico de Instrumentação</h3>
-        <p>MSX International</p>
-        <span class="date">ago 2021 - nov 2021</span>
+        <h3 id="WorkTabH3_4">Trainee</h3>
+        <p id="WorkTabP_4">Itau bank</p>
+        <span class="date">2019 - 2020</span>
       </div>
     </div>
   </div>
@@ -115,14 +116,14 @@
   <div id="educacao" class="tab-content">
     <div class="timeline">
       <div class="timeline-item">
-        <h3>Bacharelado em Tecnologia da Informação</h3>
-        <p>Universidade XYZ</p>
-        <span class="date">2020 - 2024</span>
+        <h3>Bachelor in Information Systems</h3>
+        <p>Anhanguera University</p>
+        <span class="date">2019 - 2022</span>
       </div>
       <div class="timeline-item">
-        <h3>Curso Técnico em Informática</h3>
-        <p>Escola Técnica ABC</p>
-        <span class="date">2018 - 2020</span>
+        <h3>Fullstack Java Angular Specialization</h3>
+        <p>DIO</p>
+        <span class="date">2023</span>
       </div>
     </div>
   </div>
@@ -131,7 +132,7 @@
   <!-- Tecnologias -->
   <section id="technology" class="skills-section">
     <h2 id="sectionTechnologyH2">Technology</h2>
-    <p id="sectionTechnologyP">Ao longo da minha vida acadêmica e carreira, utilizei diversas ferramentas para desenvolver soluções, sendo as principais delas:</p>
+    <p id="sectionTechnologyP">Over the course of my academic life and career, I have used various tools to develop solutions, with the main ones being:</p>
     <div class="skills-container">
       <div class="skills-column">
         <h3 id="divSkillsColumnH3Frontend">Frontend</h3>
@@ -217,7 +218,9 @@
       <a href="https://github.com/nathy10Carvalh0" target="_blank"><img src="img/github.png" alt="GitHub"></a>
       <a href="https://wa.me/5511959137047?text=Olá%20Nathalia!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank"><img src="img/whatsapp.jpg" alt="WhatsApp"></a>
     </div>
+    
   </footer>
+  <p id="rights">© all rights reserved.</a></p>
   <script src="main.js"></script>
 </body>
 </html>

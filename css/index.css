@@ -22,7 +22,7 @@
       color: var(--second-color);
       background-color: var(--first-color);
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
     #logo {
       display: flex;
@@ -30,6 +30,7 @@
       align-items: center;
       gap:1.2rem;
     }
+    
     header {
       background-color: var(--first-color);
       padding: 0.2rem 2rem;
@@ -86,7 +87,7 @@
       font-family: "Quicksand", serif;
       background-color: transparent; /* Fundo transparente para combinar com o cabeçalho */
       color: var(--second-color); /* Cor do texto */
-      font-size: 1.2rem; /* Tamanho da fonte */
+      font-size: inherit; /* Tamanho da fonte */
       border: none; /* Remove a borda padrão */
       outline: none; /* Remove a borda ao focar */
       cursor: pointer; /* Cursor em forma de mão ao passar */
@@ -195,7 +196,7 @@
       
       #about .text {
         max-width: 600px; /* Limita o tamanho do texto */
-        font-size: 1.2rem;
+        font-size: inherit;
       }
 
       #about .social-links{
@@ -256,18 +257,20 @@
         background-color: #ff6f91;
       }
       #qualifications {
+        background-color: var(--forth-color);
         text-align: center;
         padding: 2rem;
       }
       
       #qualifications h2 {
         font-size: 2rem;
-        color: var(--second-color);
+        color: var(--third-color);
       }
       
       #qualifications p {
-        color: var(--third-color);
+        color: var(--second-color);
         margin-bottom: 2rem;
+        font-weight:bold;
       }
       
       .tabs {
@@ -358,7 +361,7 @@
       }
       .skills-section {
         padding: 20px;
-        background-color: var(--forth-color); 
+        background-color: var(--first-color); 
       } 
       .skills-section h2 {
         color: var(--third-color);
@@ -374,7 +377,7 @@
         gap: 20px; 
       } 
       .skills-column {
-        background-color: var(--first-color); 
+        background-color: var(--forth-color); 
         display: flex; 
         flex-direction: column; /* Garante que o conteúdo fique alinhado na vertical */ 
         align-items: center; /* Alinha o conteúdo no topo */  
@@ -399,7 +402,7 @@
       }
       #portfolio {
         padding: 4rem 2rem;
-        background-color: var(--first-color);
+        background-color: var(--forth-color);
         text-align: center;
       }
   
@@ -520,8 +523,14 @@
     footer {
       background-color: var(--first-color);
       color: var(--third-color);
-      padding: 2rem;
+      padding: 0;
       text-align: center;
+      display:flex;
+      display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-evenly;
     }
 
     footer a {
@@ -671,6 +680,7 @@
     }
 
     footer {
+      
       padding: 1rem 0.5rem;
     }
   }
